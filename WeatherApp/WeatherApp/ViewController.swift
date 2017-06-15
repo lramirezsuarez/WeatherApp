@@ -41,13 +41,13 @@ class ViewController: UIViewController {
                         
                         if let contentArray = dataString?.components(separatedBy: stringSeparator) {
                             
-                            if contentArray.count > 0 {
+                            if contentArray.count > 1 {
                                 
                                 stringSeparator = "</span>"
                                 
                                 let newContentArray = contentArray[1].components(separatedBy: stringSeparator)
                                 
-                                if newContentArray.count > 0 {
+                                if newContentArray.count > 1 {
                                     self.message = newContentArray[0].replacingOccurrences(of: "&deg;", with: "º")
                                 }
                             }
