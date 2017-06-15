@@ -46,6 +46,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwq-CC-pcT">
                                 <rect key="frame" x="162.5" y="201" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="didSearchCity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yVv-SD-KMR"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5h-Yd-P0X">
                                 <rect key="frame" x="16" y="323.5" width="343" height="20.5"/>
@@ -75,6 +78,10 @@
                             <constraint firstItem="nnG-O1-aXm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wiq-sn-ICq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="JRN-6x-CXY" id="cuU-2A-ltJ"/>
+                        <outlet property="weatherLabel" destination="j5h-Yd-P0X" id="2P0-oT-i1I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
